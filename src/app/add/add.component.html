@@ -1,0 +1,56 @@
+<div class="formdiv">
+    <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()" style="width:80%;">
+        <mat-card class="shipping-card">
+            <mat-card-header>
+                <mat-card-title>Add a User</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <input matInput placeholder="First name" [(ngModel)]="user.first_name" formControlName="firstName">
+                            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
+                                First name is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <input matInput placeholder="Last name" [(ngModel)]="user.last_name" formControlName="lastName">
+                            <mat-error *ngIf="addressForm.controls['lastName'].hasError('required')">
+                                Last name is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <mat-label>Enter your email</mat-label>
+                            <input matInput placeholder="pat@example.com" [(ngModel)]="user.email" [formControl]="email" required>
+                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                    </div>
+
+
+                    <div class="col">
+                        <mat-form-field class="full-width">
+                            <input matInput placeholder="Mobile Number" [(ngModel)]="user.mobile" formControlName="firstName">
+                            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
+                                Mobile Number is <strong>required</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
+
+
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" type="submit" (click)="createUser()">Submit</button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>

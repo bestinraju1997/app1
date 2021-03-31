@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "john",
+      "last_name": "doe",
+      "email": "john@gmail.com",
+      "mobile": "1234567891"
+    },
+    {
+      "id": 2,
+      "first_name": "joe",
+      "last_name": "doe",
+      "email": "joe@gmail.com",
+      "mobile": "3224365893"
+    },
+    {
+      "first_name": "Bestin",
+      "last_name": "Raju",
+      "email": "bestin.raju@vuelogix.com",
+      "mobile": 8943764734,
+      "id": 3
+    },
+    {
+      "first_name": "abc",
+      "last_name": "Raj",
+      "email": "hhh",
+      "mobile": "884",
+      "id": 7
+    },
+    {
+      "first_name": "kcnhtyu",
+      "last_name": "asg",
+      "email": "bestin@gmail.com",
+      "mobile": "78576747788",
+      "id": 8
+    },
+    {
+      "first_name": "Bestin",
+      "last_name": "Raju",
+      "email": "bestin@gmail.com",
+      "mobile": "8943764734",
+      "id": 9
+    },
+    {
+      "first_name": "Bestin",
+      "last_name": "Raju",
+      "email": "bestin@gmail.com",
+      "mobile": "8943764734",
+      "id": 10
+    },
+    {
+      "first_name": "Abc",
+      "last_name": "defg",
+      "email": "abc@gmail.com",
+      "mobile": "1234567890",
+      "id": 11
+    },
+    {
+      "first_name": "Joyel",
+      "last_name": "Sebastian",
+      "email": "joyel@gmail.com",
+      "mobile": "8943764734",
+      "id": 12
+    },
+    {
+      "first_name": "Joyel",
+      "last_name": "Sebastian",
+      "email": "joyel@gmail.com",
+      "mobile": "8943764734",
+      "id": 13
+    }
+  ]
+}

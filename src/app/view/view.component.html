@@ -1,0 +1,48 @@
+<div class="tablediv">
+
+    <mat-card style="width:80%;">
+        <mat-card-header>
+            <mat-card-title>View User List</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="tablecontainer">
+                <mat-card class="shipping-card">
+                    <div class="mat-elevation-z8 tablediv">
+                        <div class="container" style="padding:15px;">
+
+                            <table class="table table-striped" style="border:solid 1px black;">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Email</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Mobile Number</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let user of users">
+                                        <td>{{user.id}}</td>
+                                        <td>{{user.email}}</td>
+                                        <td>{{user.first_name}}</td>
+                                        <td>{{user.last_name}}</td>
+                                        <td>{{user.mobile}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                        <!--  <mat-paginator #paginator [length]="dataSource?.data?.length" [pageIndex]="0" [pageSize]="10" [pageSizeOptions]="[5, 10, 20]">
+                </mat-paginator> -->
+                    </div>
+                </mat-card>
+            </div>
+
+        </mat-card-content>
+
+    </mat-card>
+
+</div>
